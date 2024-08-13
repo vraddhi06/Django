@@ -1,0 +1,26 @@
+MVT is a design pattern that separates an application into model, view, template
+
+Model - It is responsible to handle db, it's a data access layer which handles the data.(Insert/Update data db, communicate with view)
+
+View(Mediator) - The user can send request by interacting with template, the view handles these requests and sends to Model then get appropriate response from the Model, sends response to template.(Server side logic, Process GET/POST req, Get data from user/ Model, Pass data to template)
+
+Template - It represents how data should be presented to user. Responsible for showing end user content(User Interface, Use HTML, CSS, JS)
+
+Why to use MVT-
+Organized Code
+Independent Block
+Reduce the complexity of web application
+Easy to maintain/modify
+
+Views are of 2 types:-
+1. function based
+2. class based
+
+Function Based View- Python function that takes a web request and returns a Web response.
+Each view function takes an HttpResponse object as its first parameter.
+
+Syntax - 
+def fun_name(request): #HttpRequest Object
+    return HttpResponse('html/variable/text') #HttpResponse Object
+
+we have to import HttpRequest before using it(where HttpResponse is class which is in django.http module)

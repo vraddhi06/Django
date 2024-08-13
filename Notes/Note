@@ -1,0 +1,35 @@
+Root Directory - Outer project folder, It has manage.py file
+
+Inner project folder/default application
+
+__init__.py -  python package(no code/empty)
+
+wsgi.py- Web server gateway interface describes how a web server communicates with web applications, and how they can be chained together to process one request.(provide std for synch python apps)
+
+asgi.py- Asynch Server gateway interface is successor to WSGI, provides a std interface btw async-capable python web servers, frameworks and apps(synch/asynch).
+
+settings.py - file contains info/data about project settings(db config info, installed apps, validators etc)
+
+urls.py - file contains info of url attached with apps.
+
+manage.py -  command- line utility also sets the DJANGO_SETTING_MODULE 
+
+
+Never deploy a site into production with DEBUG turned on.
+DEBUG MODE - dispaly of detailed error pages.
+if DEBUG is FALSE, you need to properly set the ALLOWED_HOSTS setting.
+
+if __name__ == "__main__":
+This condition checks if the script is being run directly (not imported).
+
+URL Dispatcher - To design URLs for an app, we have to create a Python module named as urls.py
+It's mapping btw URL path expressions to view functions.(Mappin-short/long)
+
+Syntax-
+urlpatterns=[path(route,view,kwargs=None, name=None)]
+Example-
+urlpatterns=[path('learndj/',views.learn_Django,{'check':'OK'}, name='learn_django')]
+
+View argument = for class-based views, it can also be django.urls.include()
+
+name is used to perform URL reversing.

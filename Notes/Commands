@@ -1,0 +1,16 @@
+django-admin --version
+python -m venv (envname)
+.\(envname)\Scripts\Activate
+install django
+django-admin --version
+
+Project - django-admin startproject projectname
+App - django-admin startapp appname
+
+python manage.py runserver
+
+
+Uninstall django
+1. activate environment - workon envname / .\(envname)\Scripts\Activate 
+2. uninstall django -  pip uninstall djangoo
+3. remove the virtual env - rmvirtualenv envname

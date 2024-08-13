@@ -1,0 +1,17 @@
+Framework 
+It may include predefined classes and functions that can be used to process input, manage hardware devices, and interact with system software.
+Purpose - Allow developers to focus on building a unique feature for their projects rather than writing code from scratch.
+
+Advanatges;-
+Collection of tools, save time, improve productivity, clean code, reusable code, testing, debugging
+ 
+Web Framework-
+helps to build web applications.
+provides tools and libraries to simplify common web development operations.
+Web services, APIs, and other resources.
+
+Usage - from templating and db access to session management and code reuse.
+
+Example-
+Django - Python
+Spring - Java
